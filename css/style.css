@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    font-family: "Times New Roman";
 }
 /* Header Pagina */
 header, main {
@@ -124,7 +125,12 @@ footer {
     text-decoration: none;
     padding: 10px;
 }
-
 .fa-share-from-square {
     color: green;
+}
+.fa-angle-up.arr  {
+    font-size: 10px;
+}
+#st {
+    width: 106%;
 }
