@@ -14,7 +14,7 @@ header {
     text-align: right;
 }
 header > div {
-    padding-top:1vh;
+    padding-top: 1vh;
 }
 header div button {
     border-radius: 5px;
@@ -24,7 +24,7 @@ header div button {
 }   
 header div button a {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
 }   
 .spk-btn-icon {
@@ -36,7 +36,7 @@ header button a:active, header button a:focus, {
 }   
 /* Corpo Pagina */
 main {
-    height: 79.5vh;
+    height: 81vh;
 }
 .container-vd {
     width: 90vw;
@@ -48,7 +48,7 @@ main {
 .vd {
     position: relative;
     width: calc(90vw / 7);
-    height: calc(75vh / 5);
+    height: calc(80vh / 5);
     background-image: url("https://picsum.photos/seed/picsum/200");
     background-position: center;
     background-size: cover;
@@ -64,15 +64,19 @@ main {
 }
 /* Footer Pagina */
 footer {
-    height: 10vh;
     background-color: #222222;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
+footer p {
+    font-size: 14px;
+}
+footer, .audio-video-settings, .commands, .commands ul, .end-call  {
+    height: 9vh;
+}
 .audio-video-settings {
     flex-basis: calc(25vw / 2);
-    height: 10vh;
     display: flex;
 }
 .audio-video-settings ul {
@@ -83,7 +87,6 @@ footer {
     text-align: center;
 }
 .audio-video-settings ul li {
-    padding: 0.5vh;
     text-align: center;
 }
 .audio-video-settings ul li i {
@@ -104,14 +107,14 @@ footer {
 .commands ul {
     display: flex;
     list-style-type: none;
-    text-align: center;
+    align-items: center;
 }
 .commands ul li {
-    padding: 1vw;
+    padding: 5px;
 }
-.commands ul li i {
-    padding: 0 1vw;
-    font-size: 2rem;
+.commands ul li i, .audio-video-settings ul li i {
+    padding: 0 0.5vw;
+    font-size: 1.5rem;
     padding-bottom: 5px;
 }
 < !-- Parti comandi termina meeting -->
@@ -121,17 +124,17 @@ footer {
 .end-call a {
     color: red;
     text-decoration: none;
-    padding:2rem 1rem;
-    height: 10vh;
-    line-height: 10vh;
-    text-align: center;
+    padding:1.7rem 1rem;
+    line-height: 9vh;
     font-weight: bold;
-    font-size: 18px;
     background-color: #4a4a4a;
 }
 .fa-share-from-square {
-    color: green;
+    color: rgb(0, 200, 0);
 }
 .fa-angle-up.arr  {
     font-size: 10px;
+}
+.commands ul, .end-call, .audio-video-settings {
+    text-align: center;
 }
