@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+/* Header Pagina */
+header, main {
+    background-color: black;
+}
+header button {
+    border-radius: 10%;
+    border: none;
+    background-color: #4a4a4a;
+    padding:1vh 1vw;
+}   
+header button a {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+}   
+.spk-btn-icon{
+    margin-right: 1vw;
+}   
+header button a:active, header button a:focus, {
+    color:inherit;
+    text-decoration:inherit;
+}   
+header {
+    text-align: right;
+}
+/* Corpo Pagina */
+main {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/* Footer Pagina */
+footer {
+    height: 15vh;
+    background-color: black;
+}
