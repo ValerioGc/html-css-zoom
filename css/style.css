@@ -35,8 +35,7 @@ header button a:active, header button a:focus, {
 }   
 /* Corpo Pagina */
 main {
-    height: 75vh;
-    overflow-y: hidden;
+    height: 79.5vh;
 }
 .container-vd {
     width: 90vw;
@@ -48,7 +47,7 @@ main {
 .vd {
     position: relative;
     width: calc(90vw / 7);
-    height: calc(73vh / 5);
+    height: calc(75vh / 5);
     background-image: url("https://picsum.photos/seed/picsum/200");
     background-position: center;
     background-size: cover;
@@ -64,6 +63,68 @@ main {
 }
 /* Footer Pagina */
 footer {
-    height: 15vh;
+    height: 10vh;
     background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.audio-video-settings {
+    flex-basis: calc(25vw / 2);
+    height: 10vh;
+    display: flex;
+}
+.audio-video-settings ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+.audio-video-settings ul li {
+    padding: 0.5vh;
+    text-align: center;
+}
+.audio-video-settings ul li i {
+    padding: 0 1vw 0 0.5vw;
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+.commands {
+    flex-basis:75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.commands ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+.commands ul li {
+    padding: 1vw;
+}
+.commands ul li i {
+    padding: 0 1vw;
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+.end-call {
+    flex-basis: calc(25vw / 2);
+    background-color: grey;
+    height:10vh;
+    vertical-align: center;
+    line-height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.end-call a {
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.fa-share-from-square {
+    color: green;
 }
