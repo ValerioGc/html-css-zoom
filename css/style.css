@@ -91,6 +91,10 @@ footer {
     font-size: 2rem;
     padding-bottom: 5px;
 }
+#st {
+    width: 106%;
+}
+< !-- Parte comandi -->
 .commands {
     flex-basis:75vw;
     display: flex;
@@ -110,27 +114,24 @@ footer {
     font-size: 2rem;
     padding-bottom: 5px;
 }
+< !-- Parti comandi termina meeting -->
 .end-call {
     flex-basis: calc(25vw / 2);
-    background-color: grey;
-    height:10vh;
-    vertical-align: center;
-    line-height: 10vh;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
 }
 .end-call a {
     color: red;
     text-decoration: none;
-    padding: 10px;
+    padding:2rem 1rem;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #4a4a4a;
 }
 .fa-share-from-square {
     color: green;
 }
 .fa-angle-up.arr  {
     font-size: 10px;
-}
-#st {
-    width: 106%;
 }
