@@ -8,34 +8,62 @@
 header, main {
     background-color: black;
 }
-header button {
-    border-radius: 10%;
+header {
+    height: 10vh;
+    text-align: right;
+}
+header > div {
+    padding-top:1vh;
+}
+header div button {
+    border-radius: 5px;
     border: none;
     background-color: #4a4a4a;
-    padding:1vh 1vw;
+    padding: 1vh 0.5vw;
 }   
-header button a {
+header div button a {
     display: inline-block;
     font-size: 1.5em;
     text-decoration: none;
 }   
-.spk-btn-icon{
+.spk-btn-icon {
     margin-right: 1vw;
 }   
 header button a:active, header button a:focus, {
     color:inherit;
     text-decoration:inherit;
 }   
-header {
-    text-align: right;
-}
 /* Corpo Pagina */
 main {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    height: 75vh;
+    overflow-y: hidden;
+}
+.container-vd {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.vd {
+    position: relative;
+    width: calc(90vw / 7);
+    height: calc(73vh / 5);
+    background-image: url("https://picsum.photos/seed/picsum/200");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid rgb(0, 0, 0);
+}
+.vd p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2vh 2vw 0.2vh 0.2vw;
 }
 /* Footer Pagina */
 footer {
     height: 15vh;
-    background-color: black;
+    background-color: #222222;
 }
