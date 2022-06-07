@@ -3,32 +3,24 @@
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: "Times New Roman";
+    font-family: sans-serif;
 }
 /* Header Pagina */
 header, main {
     background-color: black;
 }
 header {
-    height: 10vh;
+    height: 55px;
     text-align: right;
 }
-header > div {
-    padding-top: 1vh;
+header div button {
+    padding-top: 4px;
 }
 header div button {
     border-radius: 5px;
     border: none;
     background-color: #4a4a4a;
-    padding: 1vh 0.5vw;
-}   
-header div button a {
-    display: inline-block;
-    font-size: 1em;
-    text-decoration: none;
-}   
-.spk-btn-icon {
-    margin-right: 1vw;
+    padding: 10px 10px;
 }   
 header button a:active, header button a:focus, {
     color:inherit;
@@ -36,7 +28,8 @@ header button a:active, header button a:focus, {
 }   
 /* Corpo Pagina */
 main {
-    height: 81vh;
+    height: calc(100vh - 126px);
+    overflow-y: auto;
 }
 .container-vd {
     width: 90vw;
@@ -47,8 +40,8 @@ main {
 }
 .vd {
     position: relative;
-    width: calc(90vw / 7);
-    height: calc(80vh / 5);
+    width: 223px;
+    height: 132px;
     background-image: url("https://picsum.photos/seed/picsum/200");
     background-position: center;
     background-size: cover;
@@ -60,7 +53,7 @@ main {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 2vh 2vw 0.2vh 0.2vw;
+    padding: 5px 2px 5px 5px;
 }
 /* Footer Pagina */
 footer {
@@ -72,8 +65,11 @@ footer {
 footer p {
     font-size: 14px;
 }
+.audio-video-settings, .commands, .end-call {
+   flex-shrink: 0; 
+}
 footer, .audio-video-settings, .commands, .commands ul, .end-call  {
-    height: 9vh;
+    height: 70px;
 }
 .audio-video-settings {
     flex-basis: calc(25vw / 2);
@@ -86,16 +82,13 @@ footer, .audio-video-settings, .commands, .commands ul, .end-call  {
     list-style-type: none;
     text-align: center;
 }
-.audio-video-settings ul li {
-    text-align: center;
-}
-.audio-video-settings ul li i {
-    padding: 0 1vw 0 0.5vw;
+.audio-video-settings ul li button {
+    padding: 0;
     font-size: 2rem;
-    padding-bottom: 5px;
-}
-#st {
-    width: 106%;
+    padding: 5px 10px;
+    border:none;
+    background-color: #222222;
+    text-align: center;
 }
 < !-- Parte comandi -->
 .commands {
@@ -113,7 +106,7 @@ footer, .audio-video-settings, .commands, .commands ul, .end-call  {
     padding: 5px;
 }
 .commands ul li i, .audio-video-settings ul li i {
-    padding: 0 0.5vw;
+    padding: 0;
     font-size: 1.5rem;
     padding-bottom: 5px;
 }
@@ -121,13 +114,13 @@ footer, .audio-video-settings, .commands, .commands ul, .end-call  {
 .end-call {
     flex-basis: calc(25vw / 2);
 }
-.end-call a {
+.end-call button {
     color: red;
-    text-decoration: none;
-    padding:1.7rem 1rem;
-    line-height: 9vh;
+    padding:0;
+    line-height: 70px;
     font-weight: bold;
     background-color: #4a4a4a;
+    border: none;
 }
 .fa-share-from-square {
     color: rgb(0, 200, 0);
@@ -137,4 +130,7 @@ footer, .audio-video-settings, .commands, .commands ul, .end-call  {
 }
 .commands ul, .end-call, .audio-video-settings {
     text-align: center;
+}
+.fa-solid {
+    padding-right: 10px;
 }
