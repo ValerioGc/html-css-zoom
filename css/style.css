@@ -68,11 +68,11 @@ footer p {
 .audio-video-settings, .commands, .end-call {
    flex-shrink: 0; 
 }
-footer, .audio-video-settings, .commands, .commands ul, .end-call  {
+footer, .audio-video-settings, .commands, .commands ul, .end-call {
     height: 70px;
 }
 .audio-video-settings {
-    flex-basis: calc(25vw / 2);
+    flex-basis: calc(21vw / 2);
     display: flex;
 }
 .audio-video-settings ul {
@@ -92,7 +92,7 @@ footer, .audio-video-settings, .commands, .commands ul, .end-call  {
 }
 < !-- Parte comandi -->
 .commands {
-    flex-basis:75vw;
+    flex-basis:83vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,31 +106,52 @@ footer, .audio-video-settings, .commands, .commands ul, .end-call  {
     padding: 5px;
 }
 .commands ul li i, .audio-video-settings ul li i {
-    padding: 0;
+    padding: 0 5px;
     font-size: 1.5rem;
     padding-bottom: 5px;
 }
-< !-- Parti comandi termina meeting -->
+/*Parti comandi termina meeting */
 .end-call {
-    flex-basis: calc(25vw / 2);
-}
-.end-call button {
+    flex-basis: calc(21vw / 2);
     color: red;
-    padding:0;
-    line-height: 70px;
-    font-weight: bold;
     background-color: #4a4a4a;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.end-call:hover * {
+    color: #4a4a4a;
+    background-color: red;
+}
+.end-call:active {
+    width: 10vw;
+    color: #4a4a4a;
+    background-color: red;
+    opacity: 0.5;
+    animation: end-call-btn 2s ease-in-out 0.2s;
 }
 .fa-share-from-square {
     color: rgb(0, 200, 0);
 }
 .fa-angle-up.arr  {
     font-size: 10px;
+    padding: 0 11px;
 }
 .commands ul, .end-call, .audio-video-settings {
     text-align: center;
 }
 .fa-solid {
     padding-right: 10px;
+}
+/* animazione bottone end call */
+@keyframes end-call-btn {
+    0% {
+        flex-basis: 21vw;
+    }
+    50% {
+        flex-basis: -10vw;
+    }
+    100% {
+        filter:blur(50px);
+    }
 }
